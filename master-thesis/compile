@@ -1,0 +1,5 @@
+#!/bin/bash
+pdflatex rpithesis.tex
+bibtex rpithesis
+pdflatex rpithesis.tex
+pdflatex rpithesis.tex

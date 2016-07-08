@@ -1,0 +1,43 @@
+\chapter{CONCLUSION AND FUTURE WORK} \label{sec:conclusion}
+
+\section{Conclusion}
+
+My contributions include the creation of a sketch-based interface for architectural design, modifications and enhancements to OASIS, and the conduction of a pilot study and analysis. The development of the sketching interface included creation of a recognizer, metrics to score various aspects of user drawn strokes, and a novel user interface. Also created were two different methods of reclassifying objects and  a process to fit a rectangle to a set of strokes. Improvements to OASIS include bug fixes, small feature development, and improvements to user experience. The pilot study indicates that the interface does lack some features and depth of available primitives for designers to use. However, the new sketching interface does show promise, and is unique in concept and execution.
+
+\section{Future Work}
+\subsection{Dynamic Recognition}
+%able to recognize new shapes and figure on the fly
+
+A limitation of this system is its lack of flexibility in recognizable primitives. As shown in the pilot study, users showed desire for the system to recognize additional shapes. While the recognition of rectangles was relatively well received, the shortage of alternative choices for design was received as disappointing. Without extensive further development, the procedure to add more primitives would be time intensive. Currently, the system is limited to recognizing one shape (rectangles), and prior experience has shown that over-reliance on the \$N recognizer in an attempt to recognize too many primitives is ineffective in accomplishing our goals. There is future work to be done to expand the number of recognizable primitives and ease the process of adding those primitives.\\
+
+Not only was the absence of additional shapes noted, but the low flexibility in choice of room items was observed by the participants of the study. All furniture items created were the same shape, with limited customizable attributes. While some users were satisfied with the options, more support should be given to increased number of primitive choices. \\
+
+Research into machine learning based methods may prove to be worthwhile. While machine learning requires significantly more time and data to train, the increased accuracy and reliability reflect that time investment. Using training data that includes new primitives may be a relatively simple solution to the otherwise difficult problem of adding new shapes to the system. The amount of knowledge required to adjust a machine learning algorithm effectively is undeniably high, but it could be a worthwhile investment in the long term.
+
+\subsection{Group Sketching}
+Architectural designs are often not created by one person alone, but the culmination of multiple designers' efforts combined. The ability to share and collaborate with other people would be an invaluable tool. With multiple collaborators, models could be more complex and intricate. There exists interesting design choices involving the ownership and versions of models. \\
+
+Currently OASIS and this sketching interface only allow for the ownership of a model to belong to one person. It may be beneficial to adopt version control to assist in organizing models. Version control would allow users to work on models at their own pace, and merge models together to create significantly more complex designs. Additionally, outside of the model viewer, there is no ability to share models with other users. OASIS does contain unique link sharing for models, but it is view-only and does not allow editing. A possible solution would be to allow users to manage the accessibility of their models, allowing each individual user to choose to keep models private or allow other certain other users to edit their models. \\
+
+One possible feature for group sketching would be the adoption of real-time collaborative sketching. The current iteration of this sketching interface does not allow for multiple users to sketch on one interface. Multiple users being able to draw on the same canvas in real time would be a novel feature to add to the sketching interface. However, such a system has its own challenges, such as updating multiple canvases across multiple systems and communicating intent across many users.
+
+\subsection{Multiple View Sketching}
+
+The current sketching interface only allows the user to edit their design in one view: top-down. The locked view from top-down restricts the amount of control and freedom designers have over models. As discussed in chapter 1, there exists many more types of architectural sketches. Views such as isometric, cross section, and elevation can empower users to develop their ideas further. Viewing models from different angles allows the user to better understand the look and feel of what they are designing. Should more viewing angles be available, users could tackle a design problem from multiple angles, sparking more ideas and lead to increased creativity in solutions. \\
+
+For example, by extending to a cross section view, the user can modify the heights of objects. By editing an elevation sketch, a user can adjust how the facade of their room looks. Future work is recommended to explore the area of sketching from multiple views and editing more properties of the model.
+
+\subsection{Pilot Study Improvements}
+
+A more thorough and carefully planned user study could be done to study any number of habits related to sketching. One limitation of the pilot study performed was its low number of participants. I performed the study on a small, select group of users, and it is possible the group I chose suffered from bias due to my involvement in the applicant. Opening the study to all willing applicants would reduce the bias in feedback. Due to a low number of participants, there was a small amount of feedback. Collecting more feedback would allow us to more accurately rate our tool. Another modification to the procedure would be to perform the pilot study for longer. The study lasted only one session, consisting of roughly 15 minutes of application usage and questioning per user. This was far shorter than the time spent conducting the OASIS pilot study \cite{oasis2016}. \\
+
+The amount of information gathered from the participants was limited to the questions asked and models drawn. More information could be gathered and analyzed, such as number of incorrect recognitions or number of edits. Further analysis could be done on user behaviors, including what part of a room users typically draw first, or even the extent to which the designs are to scale. The possibilities to discover interesting patterns within design are endless. 
+
+% \subsection{Expansion to other types of simulations}
+
+% Just as professional CAD software is not limited to architecture design, OASIS and the new sketching interface are not limited to simulating daylight. Since the models created are watertight, it is possible to simulate intangibles such as fluids and sounds. All forms of modeling can benefit from a more productive early design phase. However, OASIS is currently not built to handle simulations other than daylight.
+
+% Improvements to the sketching interface 
+
+% This future work would also be a massive undertaking, expanding not only the sketching interface, but the backend of OASIS as well.
+
